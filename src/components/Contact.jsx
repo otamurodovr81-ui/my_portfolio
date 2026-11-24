@@ -86,13 +86,13 @@ function Contact() {
     return (
         <section
             id="contact"
-            className="min-h-screen flex items-center justify-center px-5 pt-22  "
+            className="min-h-screen flex items-center justify-center px-5 pt-20 pb-4  "
         >
             <div className="max-w-[1100px] w-full">
 
                 {/* Title */}
                 <div className="text-center mb-8">
-                    <h2 className="text-2xl md:text-4xl font-bold text-white mb-2">
+                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-2">
                         {t.contactTitle}
                     </h2>
 

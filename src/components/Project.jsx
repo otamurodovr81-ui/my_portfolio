@@ -25,7 +25,7 @@ function Project() {
                     className="text-center mb-14"
                 >
 
-                    <h2 className="text-4xl md:text-5xl mt-4 font-bold text-cyan-400">
+                    <h2 className="text-4xl md:text-5xl mt-4 font-bold text-white">
                         {t.title}
                     </h2>
 

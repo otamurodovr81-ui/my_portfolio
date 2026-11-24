@@ -20,7 +20,7 @@ function Skills() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-4xl font-bold text-white mb-4 text-center"
+                    className="text-3xl md:text-5xl font-bold text-white mb-4 text-center"
                 >
                    {t.skillsTitle}
                 </motion.h2>
