@@ -8,7 +8,7 @@ const uz = {
     contact: "Bog'lanish",
 
     // home
-    homeTitle: "Salom, men Ravshanbek",
+    homeTitle: "Salom men Ravshanbek",
     profession: "Frontend dasturchi",
     homeDescription:
         "Men zamonaviy, chiroyli va interaktiv web saytlar yarataman. React, TypeScript va boshqa texnologiyalar yordamida g'oyalarni haqiqiy loyihalarga aylantiraman.",

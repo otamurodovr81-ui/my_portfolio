@@ -8,7 +8,7 @@ const en = {
     contact: "Contact",
     
     // home
-    homeTitle: "Hello, I'm Ravshanbek",
+    homeTitle: "Hello I'm Ravshanbek",
     profession: "Frontend Developer",
     homeDescription:
         "I create modern, beautiful, and interactive websites. Using React, TypeScript, and other technologies, I turn ideas into real projects.",
