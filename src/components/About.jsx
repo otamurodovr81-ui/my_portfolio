@@ -78,7 +78,9 @@ function About() {
                     <img
                         src={rasim3}
                         alt="Ravshan"
-                        className="relative z-10 w-full max-w-sm object-contain"
+                        draggable="false"
+                        onContextMenu={(e) => e.preventDefault()}
+                        className=" select-none pointer-events-auto [-webkit-user-drag:none] relative z-10 w-full max-w-sm object-contain"
                         style={{
                             maskImage: "linear-gradient(to bottom, black 65%, transparent 100%)",
                             WebkitMaskImage: "linear-gradient(to bottom, black 65%, transparent 100%)",
