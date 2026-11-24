@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import { FaGithub,  FaTelegram, FaInstagram  } from "react-icons/fa";
-import projects from "../Data/project";
+import projects from "../data/project";
 import { useLanguage } from "../context/LanguageContext";
 
 function Project() {

@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import skillsData from "../Data/skillsData";
+import skillsData from "../data/skillsData";
 import { useLanguage } from "../context/LanguageContext";
 
 
