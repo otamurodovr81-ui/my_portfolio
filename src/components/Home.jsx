@@ -14,7 +14,7 @@ function Home() {
       <div className="container mx-auto text-center">
 
         {/* Asosiy sarlavha */}
-        <h1 className="text-4xl md:text-6xl font-bold text-black mb-4  text-white">
+        <h1 className="text-5xl md:text-6xl font-bold text-black mb-4  text-white">
           {t.homeTitle}
         </h1>
 

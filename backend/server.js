@@ -60,8 +60,8 @@ app.post("/api/contact", async (req, res) => {
 
         // Telegram xabar dizayni
         const text = `
-<b>📩 Yangi xabar (Portfolio)</b>
-
+<b>📩 Yangi xabar </b>
+<i>📅 Portfolio orqali yuborildi</i>
 ━━━━━━━━━━━━━━
 
 👤 <b>Ism:</b> ${safeName}
@@ -78,7 +78,6 @@ ${safeMessage}
 
 ↩️ Telegram orqali javob berishingiz mumkin.
 
-<i>📅 Portfolio orqali yuborildi</i>
         `;
 
         // Telegram API
