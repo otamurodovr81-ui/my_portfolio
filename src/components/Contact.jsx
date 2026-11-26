@@ -1,5 +1,5 @@
 
-import { User,  Mail, Phone, Locate, LocateIcon } from "lucide-react";
+import { User,  Mail, Phone, Locate, LocateIcon, LoaderCircle } from "lucide-react";
 import { FaLocationArrow, FaTelegram, FaTelegramPlane } from "react-icons/fa";
 import { FaLocationDot, FaLocationPin } from "react-icons/fa6";
 import { useLanguage } from "../context/LanguageContext";
@@ -7,6 +7,8 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 
 function Contact() {
+
+    const [isLoading, setIsLoading] = useState(false);
 
 
     const { t } = useLanguage();
@@ -53,6 +55,8 @@ function Contact() {
 
         if (!validate()) return;
 
+         setIsLoading(true);
+
         try {
             const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
                 method: "POST",
@@ -79,6 +83,8 @@ function Contact() {
         } catch (error) {
             console.error("Xatolik:", error);
             toast.error("Xabar yuborilmadi!");
+        } finally {
+            setIsLoading(false);
         }
     };
 
@@ -205,9 +211,20 @@ function Contact() {
                         {/* malumotni yuborish */}
                         <button
                             type="submit"
-                            className="w-full flex items-center gap-2 justify-center bg-sky-500 hover:bg-sky-400 text-white font-semibold py-3 rounded-xl transition cursor-pointer"
+                            disabled={isLoading}
+                            className="w-full flex items-center gap-2 justify-center bg-sky-500 hover:bg-sky-400 disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold py-3 rounded-xl transition cursor-pointer"
                         >
-                            {t.sendMessage} <FaTelegramPlane size={20} />
+                            {isLoading ? (
+                                <>
+                                    <LoaderCircle size={20} className="animate-spin" />
+                                    Yuborilmoqda...
+                                </>
+                            ) : (
+                                <>
+                                    {t.sendMessage}
+                                    <FaTelegramPlane size={20} />
+                                </>
+                            )}
                         </button>
 
                     </form>
