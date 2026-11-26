@@ -25,17 +25,41 @@ function Home() {
 
         {/* Tanishtiruv */}
         <p className="max-w-2xl mx-auto text-gray-400 text-base md:text-lg leading-relaxed mb-8">
-           {t.homeDescription}
+          {t.homeDescription}
         </p>
 
         {/* Tugmalar */}
         <div className="flex flex-wrap justify-center gap-4">
-          <a  href="#projects" className="px-6 py-3 bg-cyan-500 text-slate-950 font-bold rounded-3xl bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 font-bold hover:scale-105 transition duration-300 shadow-[0_0_30px_rgba(34,211,238,0.3)]">
-            {t.viewProjects}
+          <a
+            href="#projects"
+            className="relative inline-block hover:scale-105 transition duration-300"
+          >
+            {/* Tashqariga tarqaluvchi nur */}
+            <span className="absolute -inset-1 animate-pulse rounded-3xl bg-gradient-to-r from-cyan-400 to-blue-500 opacity-60 blur-lg" />
+
+            {/* Aylanuvchi border */}
+            <span className="relative block overflow-hidden rounded-3xl bg-cyan-500/40 p-0.5">
+              <span className="absolute -inset-full animate-spin bg-[conic-gradient(transparent,#ffffff,transparent_40%)]" />
+              <span className="relative block rounded-[22px] bg-gradient-to-r from-cyan-400 to-blue-500 px-6 py-3 font-bold text-slate-950">
+                {t.viewProjects}
+              </span>
+            </span>
           </a>
 
-          <a href="#contact" className="px-6 py-3 border border-cyan-400 text-cyan-400 font-bold rounded-3xl  bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 font-bold hover:scale-105 transition duration-300 shadow-[0_0_30px_rgba(34,211,238,0.3)] ">
-            {t. contactMe}
+          <a
+            href="#contact"
+            className="group relative inline-block hover:scale-105 transition duration-300"
+          >
+            {/* Tashqariga tarqaluvchi nur */}
+            <span className="absolute -inset-1 animate-pulse rounded-3xl bg-gradient-to-r from-cyan-400 to-blue-500 opacity-60 blur-lg" />
+
+            {/* Aylanuvchi border */}
+            <span className="relative block overflow-hidden rounded-3xl bg-cyan-500/40 p-0.5">
+              <span className="absolute -inset-full animate-spin bg-[conic-gradient(transparent,#ffffff,transparent_40%)]" />
+              <span className="relative block rounded-[22px] bg-gradient-to-r from-cyan-400 to-blue-500 px-6 py-3 font-bold text-slate-950">
+                {t.contactMe}
+              </span>
+            </span>
           </a>
         </div>
 

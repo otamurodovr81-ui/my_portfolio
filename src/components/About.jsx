@@ -37,8 +37,20 @@ function About() {
                     {/* BUTTON AND SOCIAL LINKS */}
                     <div className="flex flex-wrap items-center gap-4">
 
-                        <a href="#contact" className="flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 font-bold hover:scale-105 transition duration-300 shadow-[0_0_30px_rgba(34,211,238,0.3)]">
-                            {t.contactMe}
+                        <a
+                            href="#contact"
+                            className="relative inline-block hover:scale-105 transition duration-300"
+                        >
+                            {/* Tashqariga tarqaluvchi nur */}
+                            <span className="absolute -inset-1 animate-pulse rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 opacity-70 blur-lg" />
+
+                            {/* Aylanuvchi border */}
+                            <span className="relative block overflow-hidden rounded-full bg-cyan-500/40 p-0.5">
+                                <span className="absolute -inset-full animate-spin bg-[conic-gradient(transparent,#ffffff,transparent_40%)]" />
+                                <span className="relative flex items-center gap-3 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-8 py-3 font-bold text-slate-950">
+                                    {t.contactMe}
+                                </span>
+                            </span>
                         </a>
 
                         {/* Social icons */}
